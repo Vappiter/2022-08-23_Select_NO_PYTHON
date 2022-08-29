@@ -1,7 +1,7 @@
 /* Добавляем жанры */
 insert into genre(genre_name) values ('rok');
 delete from genre where genre_name = 'rok';
-insert into genre(genre_name) values ('roсk');
+insert into genre(genre_name) values ('rock');
 insert into genre(genre_name) values ('punk rock');
 insert into genre(genre_name) values ('jazz');
 insert into genre(genre_name) values ('opera');
