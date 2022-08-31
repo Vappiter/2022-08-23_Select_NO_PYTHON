@@ -19,7 +19,7 @@ create table if not exists musician (
 create table if not exists album (
      album_id serial primary key,
      album_name text not null,
-     album_year integer check (album_year > 1970 and album_year < 2022)
+     album_year integer check (album_year > 1970 and album_year <= 2022)
 );
 
 /* Создание таблицы треков, длина трека ограничена от 0 сек до 1200 */
@@ -36,7 +36,7 @@ create table if not exists track (
 create table if not exists collection (
      collection_id serial primary key,
      collection_name text not null,
-     collection_year integer check (collection_year > 1970 and collection_year < 2022)
+     collection_year integer check (collection_year > 1970 and collection_year <= 2022)
 );
 
 /* Создание таблицы привязки исполнителей к жанрам */
